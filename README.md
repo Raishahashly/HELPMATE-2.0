@@ -1,6 +1,18 @@
 # 🚑 HELPMATE 2.0 — AI-Powered Emergency Response Platform
 
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Vercel-black?style=for-the-badge)](https://helpmate-2-0.vercel.app)
+[![API Backend](https://img.shields.io/badge/⚙️_API_Backend-PythonAnywhere-blue?style=for-the-badge)](https://raishahashly.pythonanywhere.com/api/services)
+[![GitHub](https://img.shields.io/badge/📁_Source_Code-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/Raishahashly/HELPMATE-2.0)
+
 > A professional, full-stack emergency response web application built with **React + Vite** (frontend) and **Python Flask + SQLite** (backend), featuring an intelligent AI chatbot, real-time hospital mapping, and ambulance dispatch.
+
+## 🔗 Live Links
+
+| Service | URL |
+|---|---|
+| 🌐 **Frontend (Vercel)** | https://helpmate-2-0.vercel.app |
+| ⚙️ **Backend API (PythonAnywhere)** | https://raishahashly.pythonanywhere.com/api |
+| 📁 **GitHub Repository** | https://github.com/Raishahashly/HELPMATE-2.0 |
 
 ---
 
