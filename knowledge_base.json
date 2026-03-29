@@ -1,0 +1,219 @@
+{
+    "heart attack": {
+        "name": "Heart Attack",
+        "first_aid": "1. Make the person sit down, rest, and keep calm.\n2. Loosen any tight clothing around the neck or chest.\n3. If they are prescribed Aspirin and conscious, help them chew one.\n4. Do not leave them alone. Do not wait to see if symptoms improve; contact emergency services immediately.",
+        "videos": {
+            "English": "https://www.youtube.com/embed/nJwV2-eZ_wU",
+            "Hindi": "https://www.youtube.com/embed/nJwV2-eZ_wU",
+            "Malayalam": "https://www.youtube.com/embed/nJwV2-eZ_wU"
+        }
+    },
+    "stroke": {
+        "name": "Stroke",
+        "first_aid": "Remember F.A.S.T:\n1. Face: Ask them to smile. Does one side droop?\n2. Arms: Ask them to raise both arms. Does one drift downward?\n3. Speech: Ask them to repeat a simple phrase. Is their speech slurred?\n4. Time: Call for help immediately if you see any of these signs. Keep them comfortable.",
+        "videos": {
+            "English": "https://www.youtube.com/embed/mx-LhhR5gYw"
+        }
+    },
+    "burn": {
+        "name": "Burns",
+        "first_aid": "1. Immediately cool the burn under cool (not ice cold) running water for at least 20 minutes.\n2. Remove clothing and jewelry near the burn (unless stuck to the skin).\n3. Do NOT pop blisters. Do NOT apply ointments, butter, or ice directly to the burn.\n4. Cover loosely with sterile gauze or a clean plastic bag (not cling wrap tightly).",
+        "videos": {
+            "English": "https://www.youtube.com/embed/EaJmzB8oH5E"
+        }
+    },
+    "snake": {
+        "name": "Snake Bite",
+        "first_aid": "1. Keep victim calm. Panic increases venom circulation.\n2. Immobilize affected limb and keep it below heart level.\n3. Do not suck venom out or wash the wound.\n4. Rush to hospital immediately.",
+        "videos": {
+            "English": "https://www.youtube.com/embed/8AwD_X5DcyM"
+        }
+    },
+    "choke": {
+        "name": "Choking",
+        "first_aid": "1. Ask 'Are you choking?'. If they cannot speak or breathe, act immediately.\n2. Give 5 Back Blows: Lean them forward, use the heel of your hand between shoulder blades.\n3. Give 5 Abdominal Thrusts (Heimlich): Stand behind, make a fist above their navel, pull inward and upward.\n4. Alternate until the blockage is dislodged.",
+        "videos": {
+            "English": "https://www.youtube.com/embed/8aZ3aN8fX-E"
+        }
+    },
+    "mud": {
+        "name": "Mud or Dust in Eyes",
+        "first_aid": "1. Do not rub the eye\n2. Rinse gently with clean water\n3. Blink repeatedly to remove particles\n4. Seek medical help if irritation continues"
+    },
+    "dust": {
+        "name": "Mud or Dust in Eyes",
+        "first_aid": "1. Do not rub the eye\n2. Rinse gently with clean water\n3. Blink repeatedly to remove particles\n4. Seek medical help if irritation continues"
+    },
+    "stone": {
+        "name": "Foreign Object (Stone) in Eye",
+        "first_aid": "1. Do not try to remove sharp object\n2. Cover the eye lightly\n3. Go to hospital immediately"
+    },
+    "faint": {
+        "name": "Fainting",
+        "first_aid": "1. Lay the person flat\n2. Raise legs slightly\n3. Loosen tight clothing\n4. Give fresh air"
+    },
+    "fracture": {
+        "name": "Fracture (Hand/Leg)",
+        "first_aid": "1. Do not move the injured part\n2. Immobilize using a splint\n3. Apply ice pack\n4. Take to hospital immediately"
+    },
+    "sprain": {
+        "name": "Sprain (Ankle/Wrist/Knee)",
+        "first_aid": "1. Rest the joint\n2. Apply ice\n3. Compress with bandage\n4. Elevate the limb"
+    },
+    "head injury": {
+        "name": "Head Injury",
+        "first_aid": "1. Keep person still\n2. Apply cold compress\n3. Check for bleeding\n4. Seek medical help immediately"
+    },
+    "nose bleed": {
+        "name": "Nose Bleeding",
+        "first_aid": "1. Sit upright and lean forward\n2. Pinch nose for 10 minutes\n3. Do not tilt head back"
+    },
+    "ear bleed": {
+        "name": "Ear Bleeding",
+        "first_aid": "1. Do not insert anything\n2. Tilt head slightly\n3. Seek medical help immediately"
+    },
+    "dog": {
+        "name": "Dog Bite",
+        "first_aid": "1. Wash wound with soap and water\n2. Apply antiseptic\n3. Seek medical help for vaccine"
+    },
+    "cat": {
+        "name": "Cat Bite / Scratch",
+        "first_aid": "1. Clean wound immediately\n2. Apply antiseptic\n3. Visit doctor if deep"
+    },
+    "headache": {
+        "name": "Headache / Migraine",
+        "first_aid": "1. Rest in a quiet place\n2. Drink water\n3. Avoid bright light"
+    },
+    "migraine": {
+        "name": "Headache / Migraine",
+        "first_aid": "1. Rest in a quiet place\n2. Drink water\n3. Avoid bright light"
+    },
+    "fatigue": {
+        "name": "Fatigue / Overstress",
+        "first_aid": "1. Take rest\n2. Hydrate properly\n3. Practice breathing exercises"
+    },
+    "stress": {
+        "name": "Fatigue / Overstress",
+        "first_aid": "1. Take rest\n2. Hydrate properly\n3. Practice breathing exercises"
+    },
+    "constipation": {
+        "name": "Constipation",
+        "first_aid": "1. Drink more water\n2. Eat fiber-rich food\n3. Exercise regularly"
+    },
+    "dysentery": {
+        "name": "Dysentery",
+        "first_aid": "1. Stay hydrated\n2. Use ORS solution\n3. Seek medical help if severe"
+    },
+    "emergency hazard condition 23": {
+        "name": "Hazard Condition 23",
+        "first_aid": "1. Ensure the area is safe.\n2. Keep the person calm and still.\n3. Monitor breathing and pulse.\n4. Avoid giving food or water until a professional arrives."
+    },
+    "emergency hazard condition 24": {
+        "name": "Hazard Condition 24",
+        "first_aid": "1. Ensure the area is safe.\n2. Keep the person calm and still.\n3. Monitor breathing and pulse.\n4. Avoid giving food or water until a professional arrives."
+    },
+    "emergency hazard condition 25": {
+        "name": "Hazard Condition 25",
+        "first_aid": "1. Ensure the area is safe.\n2. Keep the person calm and still.\n3. Monitor breathing and pulse.\n4. Avoid giving food or water until a professional arrives."
+    },
+    "emergency hazard condition 26": {
+        "name": "Hazard Condition 26",
+        "first_aid": "1. Ensure the area is safe.\n2. Keep the person calm and still.\n3. Monitor breathing and pulse.\n4. Avoid giving food or water until a professional arrives."
+    },
+    "emergency hazard condition 27": {
+        "name": "Hazard Condition 27",
+        "first_aid": "1. Ensure the area is safe.\n2. Keep the person calm and still.\n3. Monitor breathing and pulse.\n4. Avoid giving food or water until a professional arrives."
+    },
+    "emergency hazard condition 28": {
+        "name": "Hazard Condition 28",
+        "first_aid": "1. Ensure the area is safe.\n2. Keep the person calm and still.\n3. Monitor breathing and pulse.\n4. Avoid giving food or water until a professional arrives."
+    },
+    "emergency hazard condition 29": {
+        "name": "Hazard Condition 29",
+        "first_aid": "1. Ensure the area is safe.\n2. Keep the person calm and still.\n3. Monitor breathing and pulse.\n4. Avoid giving food or water until a professional arrives."
+    },
+    "emergency hazard condition 30": {
+        "name": "Hazard Condition 30",
+        "first_aid": "1. Ensure the area is safe.\n2. Keep the person calm and still.\n3. Monitor breathing and pulse.\n4. Avoid giving food or water until a professional arrives."
+    },
+    "emergency hazard condition 31": {
+        "name": "Hazard Condition 31",
+        "first_aid": "1. Ensure the area is safe.\n2. Keep the person calm and still.\n3. Monitor breathing and pulse.\n4. Avoid giving food or water until a professional arrives."
+    },
+    "emergency hazard condition 32": {
+        "name": "Hazard Condition 32",
+        "first_aid": "1. Ensure the area is safe.\n2. Keep the person calm and still.\n3. Monitor breathing and pulse.\n4. Avoid giving food or water until a professional arrives."
+    },
+    "emergency hazard condition 33": {
+        "name": "Hazard Condition 33",
+        "first_aid": "1. Ensure the area is safe.\n2. Keep the person calm and still.\n3. Monitor breathing and pulse.\n4. Avoid giving food or water until a professional arrives."
+    },
+    "emergency hazard condition 34": {
+        "name": "Hazard Condition 34",
+        "first_aid": "1. Ensure the area is safe.\n2. Keep the person calm and still.\n3. Monitor breathing and pulse.\n4. Avoid giving food or water until a professional arrives."
+    },
+    "emergency hazard condition 35": {
+        "name": "Hazard Condition 35",
+        "first_aid": "1. Ensure the area is safe.\n2. Keep the person calm and still.\n3. Monitor breathing and pulse.\n4. Avoid giving food or water until a professional arrives."
+    },
+    "emergency hazard condition 36": {
+        "name": "Hazard Condition 36",
+        "first_aid": "1. Ensure the area is safe.\n2. Keep the person calm and still.\n3. Monitor breathing and pulse.\n4. Avoid giving food or water until a professional arrives."
+    },
+    "emergency hazard condition 37": {
+        "name": "Hazard Condition 37",
+        "first_aid": "1. Ensure the area is safe.\n2. Keep the person calm and still.\n3. Monitor breathing and pulse.\n4. Avoid giving food or water until a professional arrives."
+    },
+    "emergency hazard condition 38": {
+        "name": "Hazard Condition 38",
+        "first_aid": "1. Ensure the area is safe.\n2. Keep the person calm and still.\n3. Monitor breathing and pulse.\n4. Avoid giving food or water until a professional arrives."
+    },
+    "emergency hazard condition 39": {
+        "name": "Hazard Condition 39",
+        "first_aid": "1. Ensure the area is safe.\n2. Keep the person calm and still.\n3. Monitor breathing and pulse.\n4. Avoid giving food or water until a professional arrives."
+    },
+    "emergency hazard condition 40": {
+        "name": "Hazard Condition 40",
+        "first_aid": "1. Ensure the area is safe.\n2. Keep the person calm and still.\n3. Monitor breathing and pulse.\n4. Avoid giving food or water until a professional arrives."
+    },
+    "emergency hazard condition 41": {
+        "name": "Hazard Condition 41",
+        "first_aid": "1. Ensure the area is safe.\n2. Keep the person calm and still.\n3. Monitor breathing and pulse.\n4. Avoid giving food or water until a professional arrives."
+    },
+    "emergency hazard condition 42": {
+        "name": "Hazard Condition 42",
+        "first_aid": "1. Ensure the area is safe.\n2. Keep the person calm and still.\n3. Monitor breathing and pulse.\n4. Avoid giving food or water until a professional arrives."
+    },
+    "emergency hazard condition 43": {
+        "name": "Hazard Condition 43",
+        "first_aid": "1. Ensure the area is safe.\n2. Keep the person calm and still.\n3. Monitor breathing and pulse.\n4. Avoid giving food or water until a professional arrives."
+    },
+    "emergency hazard condition 44": {
+        "name": "Hazard Condition 44",
+        "first_aid": "1. Ensure the area is safe.\n2. Keep the person calm and still.\n3. Monitor breathing and pulse.\n4. Avoid giving food or water until a professional arrives."
+    },
+    "emergency hazard condition 45": {
+        "name": "Hazard Condition 45",
+        "first_aid": "1. Ensure the area is safe.\n2. Keep the person calm and still.\n3. Monitor breathing and pulse.\n4. Avoid giving food or water until a professional arrives."
+    },
+    "emergency hazard condition 46": {
+        "name": "Hazard Condition 46",
+        "first_aid": "1. Ensure the area is safe.\n2. Keep the person calm and still.\n3. Monitor breathing and pulse.\n4. Avoid giving food or water until a professional arrives."
+    },
+    "emergency hazard condition 47": {
+        "name": "Hazard Condition 47",
+        "first_aid": "1. Ensure the area is safe.\n2. Keep the person calm and still.\n3. Monitor breathing and pulse.\n4. Avoid giving food or water until a professional arrives."
+    },
+    "emergency hazard condition 48": {
+        "name": "Hazard Condition 48",
+        "first_aid": "1. Ensure the area is safe.\n2. Keep the person calm and still.\n3. Monitor breathing and pulse.\n4. Avoid giving food or water until a professional arrives."
+    },
+    "emergency hazard condition 49": {
+        "name": "Hazard Condition 49",
+        "first_aid": "1. Ensure the area is safe.\n2. Keep the person calm and still.\n3. Monitor breathing and pulse.\n4. Avoid giving food or water until a professional arrives."
+    },
+    "emergency hazard condition 50": {
+        "name": "Hazard Condition 50",
+        "first_aid": "1. Ensure the area is safe.\n2. Keep the person calm and still.\n3. Monitor breathing and pulse.\n4. Avoid giving food or water until a professional arrives."
+    }
+}

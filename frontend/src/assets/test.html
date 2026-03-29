@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HelpMate</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    body {
+      background-image: url('https://media.istockphoto.com/id/872576234/photo/rescue.jpg?s=612x612&w=0&k=20&c=53Sskdnw4l3O_Wvx6sIcvveWwSxBxT1X-kkrZg-W9Cw=');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      /* Initial opacity for the fade-in effect */
+      opacity: 0;
+      transition: opacity 2s ease-in-out;
+    }
+
+    body.fade-in {
+      opacity: 1;
+    }
+
+    h1 {
+      font-size: 5rem;
+      color: #080808;
+      margin-top: 20px;
+      font-family: 'Roboto Slab', serif;
+    }
+
+    .description {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 90%;
+      margin-top: 20px;
+    }
+
+    .description p {
+      font-size: 1.2rem;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .button-container {
+      text-align: center;
+    }
+
+    .button-container a {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      background-color: #007BFF;
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .button-container p {
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      color: rgb(8, 7, 7);
+    }
+
+    .button1 {
+      background-image: url('./images/stroke.jpg');
+    }
+
+    .button2 {
+      background-image: url('./images/heart.jpg');
+    }
+
+    .button3 {
+      background-image: url('./images/shock.jpg');
+    }
+
+    .button4 {
+      background-image: url('./images/snake.jpg');
+    }
+
+    .button5 {
+      background-image: url('./images/burn.jpg');
+    }
+
+    .button6 {
+      background-image: url('./images/choking.jpg');
+    }
+
+    .button-container a:hover {
+      background-color: rgba(20, 16, 16, 0.9);
+    }
+
+    .table-container {
+      width: 80%;
+      max-width: 800px;
+      background: rgba(92, 89, 89, 0.9);
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #606367;
+      color: #010409;
+      text-transform: uppercase;
+    }
+
+    .call-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .call-button {
+      background-color: #28a745;
+      background-image: url('https://img.icons8.com/ios-filled/50/ffffff/phone.png'); 
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .call-button:hover {
+      background-color: #218838;
+    }
+
+    .call-text {
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 10px 15px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .message {
+      position: fixed;
+      bottom: 100px;
+      right: 20px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 10px 15px;
+      border-radius: 10px;
+      font-size: 14px;
+      display: none;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+  <h1>HelpMate</h1>
+
+  <div class="description">
+    <p>Welcome to HelpMate, your trusted partner in healthcare. We provide quick and reliable medical assistance, offering access to expert advice, virtual consultations, emergency support, and essential health resources—all in one place. Your health is our priority, and we’re here to guide you every step of the way.</p>
+  </div>
+
+  <div class="buttons">
+    <!-- Existing button content -->
+  </div>
+
+  <div class="table-container">
+    <!-- Existing table content -->
+  </div>
+
+  <div class="call-container">
+    <a href="#" class="call-button" id="call-hospital"></a>
+    <div class="call-text">Call to the nearby hospital</div>
+    <div class="message" id="message"></div>
+  </div>
+
+  <script>
+    function showMessage(text) {
+      const messageBox = document.getElementById('message');
+      messageBox.innerText = text;
+      messageBox.style.display = 'block';
+      setTimeout(() => {
+        messageBox.style.display = 'none';
+      }, 5000);
+    }
+
+    document.getElementById('call-hospital').addEventListener('click', (e) => {
+      e.preventDefault();
+
+      if (!navigator.geolocation) {
+        showMessage("Geolocation is not supported by your browser.");
+        return;
+      }
+
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const { latitude, longitude } = position.coords;
+          const apiKey = 'YOUR_GOOGLE_MAPS_API_KEY'; // Replace with your API key
+          const apiUrl = `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=${latitude},${longitude}&radius=5000&type=hospital&key=${apiKey}`;
+
+          fetch(apiUrl)
+            .then((response) => response.json())
+            .then((data) => {
+              if (data.results && data.results.length > 0) {
+                const hospital = data.results[0];
+                const phone = hospital.formatted_phone_number || 'No phone number available';
+
+                if (phone !== 'No phone number available') {
+                  window.location.href = `tel:${phone}`;
+                } else {
+                  showMessage(`Nearby hospital found: ${hospital.name}, but no phone number is available.`);
+                }
+              } else {
+                showMessage('No hospitals found nearby.');
+              }
+            })
+            .catch(() => {
+              showMessage('Failed to fetch hospital details.');
+            });
+        },
+        () => {
+          showMessage('Unable to retrieve your location.');
+        }
+      );
+    });
+  </script>
+</body>
+</html>
