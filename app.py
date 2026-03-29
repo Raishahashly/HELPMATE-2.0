@@ -8,6 +8,41 @@ app = Flask(__name__)
 # Enable CORS for all domains, specifically the one React runs on (:5173)
 CORS(app)
 
+# ─── AUTO-INITIALIZE DATABASE ON STARTUP ─────────────────────────────────────
+# This ensures the DB is always created when deployed on Railway/Render
+def init_db():
+    conn = sqlite3.connect('helpmate.db')
+    cursor = conn.cursor()
+    cursor.execute('''CREATE TABLE IF NOT EXISTS emergency_services (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        name TEXT NOT NULL, type TEXT NOT NULL, contact_no TEXT NOT NULL)''')
+    cursor.execute('''CREATE TABLE IF NOT EXISTS hospitals (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        name TEXT NOT NULL, lat REAL NOT NULL, lng REAL NOT NULL, contact_no TEXT NOT NULL)''')
+    cursor.execute('''CREATE TABLE IF NOT EXISTS emergencies (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        type TEXT NOT NULL, lat REAL NOT NULL, lng REAL NOT NULL,
+        timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+        status TEXT DEFAULT 'pending',
+        hospital_assigned INTEGER)''')
+    # Seed only if empty
+    if cursor.execute('SELECT COUNT(*) FROM emergency_services').fetchone()[0] == 0:
+        cursor.executemany('INSERT INTO emergency_services (name, type, contact_no) VALUES (?, ?, ?)', [
+            ('Fire Control Room',   'Fire Safety',    '101'),
+            ('Ambulance Dispatch',  'Medical',        '102'),
+            ('Police Station',      'Security/Police','100'),
+            ('National Emergency',  'General',        '112'),
+        ])
+    if cursor.execute('SELECT COUNT(*) FROM hospitals').fetchone()[0] == 0:
+        cursor.executemany('INSERT INTO hospitals (name, lat, lng, contact_no) VALUES (?, ?, ?, ?)', [
+            ('City General Hospital', 40.7128, -74.0060, '911'),
+        ])
+    conn.commit()
+    conn.close()
+
+init_db()  # Run on every startup
+# ─────────────────────────────────────────────────────────────────────────────
+
 # Load the 50+ Scenario Knowledge Base
 KB_PATH = os.path.join(os.path.dirname(__file__), 'knowledge_base.json')
 if os.path.exists(KB_PATH):
